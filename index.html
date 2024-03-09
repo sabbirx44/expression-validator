@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expression Validator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded shadow-md">
+        <h1 class="text-2xl font-bold mb-4">Expression Validator</h1>
+        <label for="option" class="block mb-2">Select an option:</label>
+        <select id="option" class="border rounded px-4 py-2 mb-4">
+            <option value="email">Email</option>
+            <option value="phone">Phone Number</option>
+            <option value="postcode">Post Code</option>
+        </select>
+
+        <input type="text" id="input" class="border rounded px-4 py-2 mb-4" placeholder="Enter expression to validate">
+
+        <button id="validateBtn" class="bg-blue-500 text-white px-4 py-2 rounded">Validate</button>
+
+        <p id="result" class="mt-4"></p>
+    </div>
+
+    <script src="expression-validator.js"></script>
+</body>
+
+</html>
